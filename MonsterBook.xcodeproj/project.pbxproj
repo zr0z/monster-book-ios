@@ -13,10 +13,12 @@
 		22C5766D203B246900347EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C5766B203B246900347EED /* Main.storyboard */; };
 		22C5766F203B246900347EED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22C5766E203B246900347EED /* Assets.xcassets */; };
 		22C57672203B246900347EED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C57670203B246900347EED /* LaunchScreen.storyboard */; };
+		22D9CB802041FD5700BE671F /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604EA2041C720001D97CA /* Status.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		222604E82041C6B1001D97CA /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
+		222604EA2041C720001D97CA /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		22C57664203B246800347EED /* MonsterBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C57667203B246900347EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C57669203B246900347EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 			isa = PBXGroup;
 			children = (
 				222604E82041C6B1001D97CA /* Monster.swift */,
+				222604EA2041C720001D97CA /* Status.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 				22C5766A203B246900347EED /* ViewController.swift in Sources */,
 				222604E92041C6B1001D97CA /* Monster.swift in Sources */,
 				22C57668203B246900347EED /* AppDelegate.swift in Sources */,
+				22D9CB802041FD5700BE671F /* Status.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
