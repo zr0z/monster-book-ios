@@ -12,6 +12,9 @@
 		222604EE2041C7D3001D97CA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604ED2041C7D3001D97CA /* Endpoint.swift */; };
 		222604F02041C822001D97CA /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604EF2041C822001D97CA /* Model.swift */; };
 		222604F32041CAF8001D97CA /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604F22041CAF8001D97CA /* APIManager.swift */; };
+		222604F82041D271001D97CA /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604F72041D271001D97CA /* Cell.swift */; };
+		222604FA2041D27C001D97CA /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604F92041D27C001D97CA /* DataSource.swift */; };
+		222604FC2041D30E001D97CA /* MonsterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222604FB2041D30E001D97CA /* MonsterCell.swift */; };
 		22C57668203B246900347EED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C57667203B246900347EED /* AppDelegate.swift */; };
 		22C5766A203B246900347EED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22C57669203B246900347EED /* ViewController.swift */; };
 		22C5766D203B246900347EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 22C5766B203B246900347EED /* Main.storyboard */; };
@@ -25,6 +28,9 @@
 		222604ED2041C7D3001D97CA /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		222604EF2041C822001D97CA /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		222604F22041CAF8001D97CA /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		222604F72041D271001D97CA /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		222604F92041D27C001D97CA /* DataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
+		222604FB2041D30E001D97CA /* MonsterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonsterCell.swift; sourceTree = "<group>"; };
 		22C57664203B246800347EED /* MonsterBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonsterBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22C57667203B246900347EED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		22C57669203B246900347EED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +111,31 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		222604F42041D23B001D97CA /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				222604F92041D27C001D97CA /* DataSource.swift */,
+			);
+			path = DataSource;
+			sourceTree = "<group>";
+		};
+		222604F52041D250001D97CA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				222604F62041D262001D97CA /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		222604F62041D262001D97CA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				222604F72041D271001D97CA /* Cell.swift */,
+				222604FB2041D30E001D97CA /* MonsterCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		22C5765B203B246800347EED = {
 			isa = PBXGroup;
 			children = (
@@ -125,12 +156,14 @@
 			isa = PBXGroup;
 			children = (
 				2217EF3C203ED91600D1D0BF /* App */,
+				222604F42041D23B001D97CA /* DataSource */,
 				222604EC2041C7BD001D97CA /* Endpoints */,
 				2217EF3D203ED92300D1D0BF /* Controllers */,
 				222604F12041CAB2001D97CA /* Managers */,
 				222604E72041C66F001D97CA /* Models */,
 				2217EF3E203ED92E00D1D0BF /* Resources */,
 				2217EF3F203ED93A00D1D0BF /* Storyboards */,
+				222604F52041D250001D97CA /* Views */,
 			);
 			path = MonsterBook;
 			sourceTree = "<group>";
@@ -210,9 +243,13 @@
 				22C5766A203B246900347EED /* ViewController.swift in Sources */,
 				222604E92041C6B1001D97CA /* Monster.swift in Sources */,
 				22C57668203B246900347EED /* AppDelegate.swift in Sources */,
+				22D9CB802041FD5700BE671F /* Status.swift in Sources */,
+				222604FA2041D27C001D97CA /* DataSource.swift in Sources */,
 				222604F02041C822001D97CA /* Model.swift in Sources */,
 				222604EB2041C720001D97CA /* Status.swift in Sources */,
+				222604F82041D271001D97CA /* Cell.swift in Sources */,
 				222604EE2041C7D3001D97CA /* Endpoint.swift in Sources */,
+				222604FC2041D30E001D97CA /* MonsterCell.swift in Sources */,
 				222604F32041CAF8001D97CA /* APIManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
