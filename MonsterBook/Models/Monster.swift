@@ -20,3 +20,9 @@ extension Monster: CustomStringConvertible {
         return "<\(specie): \(name)>"
     }
 }
+// MARK: Model
+extension Monster: Model {
+    static var endpoint: Endpoint {
+        return .monsters
+    }
+}
