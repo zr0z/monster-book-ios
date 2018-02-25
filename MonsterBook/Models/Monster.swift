@@ -8,11 +8,26 @@
 
 import Foundation
 
+fileprivate extension Collection where Iterator.Element == String {
+    func capitalisedString() -> String {
+        return self.map({ $0.capitalized }).joined(separator: ", ")
+    }
+}
+
 struct Monster: Codable {
     let name: String
     let specie: String
-    let ailments: [String]
-    let weakness: [String]
+    let habitats: [String]
+    let ailments: [Status]
+    let weakness: [Status]
+    
+    var habitatsString: String {
+        if habitats.count == 5 {
+            return "All biomes"
+        } else {
+            return habitats.capitalisedString()
+        }
+    }
 }
 // MARK: CustomStringConvertible
 extension Monster: CustomStringConvertible {
