@@ -11,7 +11,7 @@ import Foundation
 enum Endpoint {
     case monsters
 
-    static var baseURL = URL(string:"https://api.jsonbin.io/b/5a919fb6a121bc097fe720da")!
+    static var baseURL = URL(string:"https://api.jsonbin.io/b/5a919fb6a121bc097fe720da/1")!
 
     var request:URLRequest {
         var request: URLRequest

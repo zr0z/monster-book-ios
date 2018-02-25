@@ -25,14 +25,18 @@ where Cell:ConfigurableCell, Cell.T == M {
     func fetch() {
         manager.fetch(endpoint: M.self.endpoint) { builder in
             let decoder = JSONDecoder()
-            
-            if let data = try? builder(),
-                let collection = try? decoder.decode([String: [M]].self, from: data).first!.value,
-                collection.count > 0 {
-                self.collection = collection
-                DispatchQueue.main.async {
-                    self.tableView?.reloadData()
+            do {
+                let data = try builder()
+                let collection = try decoder.decode([String: [M]].self, from: data).first!.value
+                if collection.count > 0 {
+                    self.collection = collection
+                    DispatchQueue.main.async {
+                        self.tableView?.reloadData()
+                    }
                 }
+            } catch let error {
+                // TODO: handle fetching and serialization error
+                print(error)
             }
         }
     }
